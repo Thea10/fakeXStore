@@ -41,7 +41,7 @@ const CartList = ({ items, count }) => {
      const stripe = await stripePromise;
 
      const response = await axios.post('https://fakexserve.netlify.app/create-checkout-session/', {
-      price: price.toFixed(0), quantity: qty
+      price: price, quantity: qty
     }) ;
 
     setpayLoading(true)
