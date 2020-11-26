@@ -18,7 +18,7 @@ export const fetchItems = createAsyncThunk("cart/getCart", async () => {
 });
 
 function getTotal(cart) {
-  return cart.reduce((acc, items) => acc + items.price * items.count, 0).toFixed(2);
+  return cart.reduce((acc, items) => acc + items.price * items.count, 0).toFixed(0);
 }
 
 function updateStorage(item) {
