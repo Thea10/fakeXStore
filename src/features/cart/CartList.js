@@ -55,7 +55,10 @@ const CartList = ({ items, count }) => {
  
      if (result.error) {
       setFeedback(result.paymentIntent.status);
+       return;
      }
+     dispatch(clearCart())
+
   };
 
   return (
