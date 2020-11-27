@@ -40,7 +40,7 @@ const CartList = ({ items, count }) => {
 
      const stripe = await stripePromise;
 
-     const response = await axios.post('https://fakexserve.netlify.app/create-checkout-session/', {
+     const response = await axios.post('https://desolate-fortress-63690.herokuapp.com/create-checkout-session/', {
       price: price, quantity: qty
     }) ;
 
